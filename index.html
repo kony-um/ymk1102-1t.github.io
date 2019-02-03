@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" category="IE=edge">
+        <meta name="viewport" category="width=device-width, initial-scale=1">
+
+        <title>ymk1t.github.io</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <!-- Bootstrap本体 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jqueryの読み込み -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid-fluid">
+                <a class="navbar-brand" href="#">ymk1t.github.io</a>
+                <div class="navbar-header pull-right">
+                    <div class="collapse navbar-collapse" id="navbarEexample">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html#profile">Profile</a></li>
+                            <li><a href="index.html#favorite">Favorite</a></li>
+                            <li><a href="index.html#product">Product</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-info">
+            <div class="category" id="profile">
+                <h1>Profile</h1>
+                <div class="content">
+                    <img src="img/profile/peace.jpg" id="prof-img" style="width:100px" />
+                    <div id="prof-text">
+                        <p>Yuma Konishi / 93年生まれ<br>
+                            大阪で働くWebエンジニア<br>
+                            写真は愛犬のピース♂</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category" id="favorite">
+                <h1>Favorite</h1>
+                <div class="content">
+                    <div id="fav-list" class=" center-block">
+                        <div class="panel panel-default panel-primary">
+                            <div class="panel-heading">
+                                プログラミング言語
+                            </div>
+                            <div class="panel-body">
+                                PHP(FuelPHP, Laravel)<br>
+                                Python
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-primary">
+                            <div class="panel-heading">
+                                エディタ
+                            </div>
+                            <div class="panel-body">
+                                Sublime Text 3
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default panel-primary">
+                            <div class="panel-heading">
+                                スタンス
+                            </div>
+                            <div class="panel-body">
+                                越境<br>
+                                技術は手段
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-primary">
+                            <div class="panel-heading">
+                                音楽
+                            </div>
+                            <div class="panel-body">
+                                プレイリスト ※ページ作成中
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-primary">
+                            <div class="panel-heading">
+                                読書
+                            </div>
+                            <div class="panel-body">
+                                本棚 ※ページ作成中
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-primary">
+                            <div class="panel-heading">
+                                映画
+                            </div>
+                            <div class="panel-body">
+                                リスト ※ページ作成中
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category" id="product">
+                <h1>Product</h1>
+                <!-- 左右に動くとかして -->
+<!--                 <ul class="slider">
+                    <li><img src="img/contact/github.svg"><a>自動ブログ</a></li>
+                    <li><img src="img/contact/note.jpg"><a>noteのアクセス数書き出しスクリプト</a></li>
+                    <li><img src="img/contact/qiita.png"><a>スパイワーク</a></li>
+                </ul>
+ -->
+                <div id="sampleCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="item-content">
+                                <a href="https://twitter.com/ymk1102_1t/lists/list2" target="_blank">
+                                    <img src="img/contact/twitter.png" alt="First slide">
+                                </a>
+                                <div class="item-text">
+                                    <a class="item-title" href="https://twitter.com/ymk1102_1t/lists/list2" target="_blank">アフィリエイト用TwitterBot</a>
+                                    <br>
+                                    <p class="item-disp">
+                                        自動でお小遣い稼ぎするために楽天やAmazonの情報を自動で流し続けるbotです。<br>
+                                        毎月数千円ぐらいは稼げています。<br>
+                                        楽天はFuelPHP、AmazonはPythonでスクリプトを書いてcronでジョブ実行してツイートしています。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <a href="https://daily-news-summary.hatenablog.com/" target="_blank">
+                                    <img src="img/contact/github.svg" alt="Second slide">
+                                </a>
+                                <div class="item-text">
+                                    <a class="item-title" href="https://daily-news-summary.hatenablog.com/" target="_blank">自動ニュースまとめブログ</a>
+                                    <br>
+                                    <p class="item-disp">
+                                        色んなジャンルのニュースを毎日まとめて配信するブログです<br>
+                                        PythonでRSSを読み込んだりスクレイピングして記事を取得してはてなのAPIで投稿をする、という処理をcronで定期実行しています。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-content">
+                                <a href="https://note.mu/ymk1102_1t/n/ncdf7c518cc10" target="_blank">
+                                    <img src="img/contact/note.jpg" alt="Third slide">
+                                </a>
+                                <div class="item-text">
+                                    <a class="item-title" href="https://note.mu/ymk1102_1t/n/ncdf7c518cc10" target="_blank">noteのアクセス数書き出し
+                                    スクリプト</a>
+                                    <br>
+                                    <p class="item-disp">
+                                        noteのアクセス数を取得してその日の分としてスプレッドシートに書き込みます。<br>
+                                        Seleniumでnoteの情報を取得して、スプレッドシートのAPIを使って書き込みをしています。<br>
+                                        言語はPythonです。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#sampleCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">前へ</span>
+                    </a>
+                    <a class="right carousel-control" href="#sampleCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">次へ</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category" id="contact">
+                <h1>Contact</h1>
+                <div class="content" id="contact-list">
+                    <a href="https://twitter.com/ymk1102_1t" target="_blank"><img id="twitter" src="img/contact/twitter.png" /></a>
+                    <a href="https://github.com/ymk1t" target="_blank"><img id="github" src="img/contact/github.svg" /></a>
+                    <a href="https://note.mu/ymk1102_1t" target="_blank"><img id="note" src="img/contact/note.jpg" /></a>
+                    <a href="https://qiita.com/ymk1102_1t" target="_blank"><img id="qiita" src="img/contact/qiita.png" /></a>
+                    <a href="https://ymkitbiz.work/wp/" target="_blank"><img id="qiita" src="img/contact/wordpress.png" /></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

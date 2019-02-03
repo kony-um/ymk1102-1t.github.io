@@ -1,0 +1,91 @@
+.navbar {
+    margin-bottom: 0px ;
+}
+.content {
+    width:100%;
+    display:inline-block;
+    margin: 0 auto;
+}
+#contact-list > a >img {
+    width : 10%;
+    margin : 10px;
+}
+
+#prof-img {
+    float : left;
+}
+
+#prof-text > p {
+    margin-left: 115px;
+    font-size: 20px;
+}
+
+.panel-body {
+    height: 70px;
+}
+#favorite > .content > #fav-list > .panel {
+    width:30%;
+    float:left;
+    margin:10px;
+}
+
+.slider > li {
+    width: 100px;
+}
+
+.slider > li > img {
+    width: 100px;
+    float: left;
+}
+
+.item {
+    height: 250px;
+}
+
+.item-content {
+    padding-left:20%;
+    padding-right:20%;
+}
+.item-content > a > img {
+    width: 20%;
+    display: inline;
+}
+
+.item-text {
+    display: inline;
+}
+
+.item-title {
+    display: inline;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.item-disp {
+    margin-top: 10px
+}
+
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slick-prev {
+     left: 15px;
+    z-index: 100;
+}
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+/*スライド画像の横幅可変*/
+img {
+    max-width: 100%;
+     height: auto;
+}
